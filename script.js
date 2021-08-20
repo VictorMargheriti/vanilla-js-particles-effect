@@ -9,7 +9,7 @@ let particlesArray;
 let mouse = {
     x: null,
     y: null,
-    radius: (canvas.height/80) * (canvas.width/80);
+    radius: (canvas.height/80) * (canvas.width/80)
 }
 
 window.addEventListener('mousemove',
@@ -34,7 +34,7 @@ class Particle {
     draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, Math.PI * 2, false);
-        ctx.fillStyle = '#8C5523'
+        ctx.fillStyle = '#8C5523';
         ctx.fill();
     }
     
